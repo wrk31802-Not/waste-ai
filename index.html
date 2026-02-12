@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>AI แยกขยะ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🧠 AI แยกขยะ</h1>
+  <p>อัปโหลดรูปขยะเพื่อจำแนกประเภท</p>
+<h2 id="status">⏳ กำลังโหลด AI...</h2>
+
+  <input type="file" id="imageUpload" accept="image/*" disabled>
+
+  <br><br>
+  <img id="preview" width="300" alt="preview">
+  <h2 id="result">ผลลัพธ์จะแสดงตรงนี้</h2>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
